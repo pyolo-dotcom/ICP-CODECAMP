@@ -19,18 +19,24 @@
         }
 
         header {
-            text-align: right;
+            text-align: left;
             color: black;
-            padding: 34px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        header img {
+            width: 150px;
+            height: auto;
+            margin-top: -40px;
+            margin-bottom: -40px;
+        }
+
         h1 {
             font-family: 'Roboto Slab', serif;
             margin: 0;
-            margin-left: auto;
         }
 
         nav ul {
@@ -59,29 +65,67 @@
             background-color: #ddd;
             color: black;
         }
-
         .content {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
             color: black;
             display: flex;
-            flex-direction: row;
-            align-items: center;
+            flex-direction: column; /* Updated the flex direction to column */
+            align-items: flex-start; /* Aligned items to the start */
         }
 
         .content img {
-            max-width: 100%;
+            max-width: 200px;
             height: auto;
-            border-radius: 100px;
-            margin-right: 20px;
+            border-radius: 50%; /* Make the image circular */
+            margin: 0 auto; /* Center the image */
+            display: block; /* Make the image a block element for centering */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .content p {
-            flex: 1;
             font-size: 18px;
             line-height: 1.6;
-            font-family: 'Poppins', sans-serif;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        #contact {
+            background-color: #f8f9fa;
+            padding: 30px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        #contact h2 {
+            color: #343a40;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        #contact ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #contact li {
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
         }
 
         footer {
@@ -112,13 +156,25 @@
         .social-icons a:hover {
             transform: scale(1.2); /* Slight zoom on hover */
         }
+        .proactive {
+            color: green;
+        }
+
+        .organized {
+            color: blue;
+        }
+
+        .detailed {
+            color: purple;
+        }
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <img src="pic/logo.png" alt="Logo">
+        <h1>About Me</h1>
     </header>
 
     <nav>
@@ -132,8 +188,25 @@
     </nav>
 
     <section class="content">
-        <img src="pic/logo.png" alt="Logo">
-        <p>My name is Piolo Dionisio, 21 years old, and I live in Caalibangbangan Cabanatuan City. The one word I pick in my fascination test is <span class="organized">Organized</span>.</p>
+        <img src="pic/p1.png" alt="Placeholder Image">
+        <p>Good morning or afternoon, sir. My name is Piolo O. Dionisio, and I am 21 years old. I reside in Cabanatuan City. One of my favorite pastimes is playing basketball and engaging in various sports. Additionally, I find joy in solving Rubik's cubes. My educational journey has taken me through Caalibangbangan Elementary School, Nueva Ecija High School, Nueva Ecija Senior High School, and Araullo University.</p>
+
+        <p>In a recent fascination personality test, I discovered three key traits about myself: I am <span class="proactive">proactive</span>, <span class="organized">organized</span>, and <span class="detailed">detailed</span>. I find that these traits accurately reflect my personality, especially my inclination towards being organized. I take pleasure in maintaining order in my belongings, and witnessing the neatness brings me happiness. Furthermore, I appreciate detailed instructions as they simplify tasks for me.</p>
+
+        <p>Regarding my interpersonal relationships, I am proactive when it comes to my interactions with friends and family. I enjoy taking the initiative to strengthen these connections and contribute positively to my social circles. I believe in being actively involved in the lives of those around me.</p>
+
+        <p>In conclusion, my name is Piolo O. Dionisio, and I am a 21-year-old resident of Cabanatuan City. I have a passion for playing basketball and solving Rubik's cubes. My educational background includes Caalibangbangan Elementary School, Nueva Ecija High School, Nueva Ecija Senior High School, and Araullo University. The fascination personality test revealed that I am <span class="proactive">proactive</span>, <span class="organized">organized</span>, and <span class="detailed">detailed</span>, qualities that align with my preference for an organized and detailed approach to tasks. In my relationships with friends and family, I am proactive and enjoy taking the lead to strengthen these connections.</p>
+
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through the following channels:</p>
+        <ul>
+            <li>Email: <a href="mailto:dionisiopiolo@gmail.com">dionisiopiolo@gmail.com</a></li>
+            <li>Phone: 09610666652</li>
+        </ul>
+        
     </section>
 
     <footer>

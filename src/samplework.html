@@ -19,18 +19,24 @@
         }
 
         header {
-            text-align: right;
+            text-align: left;
             color: black;
-            padding: 34px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        header img {
+            width: 150px;
+            height: auto;
+            margin-top: -40px;
+            margin-bottom: -40px;
+        }
+
         h1 {
             font-family: 'Roboto Slab', serif;
             margin: 0;
-            margin-left: auto;
         }
 
         nav ul {
@@ -66,22 +72,30 @@
             padding: 20px;
             color: black;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             align-items: center;
         }
 
-        .content img {
-            max-width: 100%;
+        .custom-button {
             height: auto;
-            border-radius: 100px;
-            margin-right: 20px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            margin: 8px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .content p {
-            flex: 1;
-            font-size: 18px;
-            line-height: 1.6;
-            font-family: 'Poppins', sans-serif;
+        .custom-button img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .custom-button:hover img {
+            transform: scale(1.1);
         }
 
         footer {
@@ -118,7 +132,8 @@
 <body>
 
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <img src="pic/logo.png" alt="Logo">
+        <h1>Sample Work</h1>
     </header>
 
     <nav>
@@ -132,9 +147,47 @@
     </nav>
 
     <section class="content">
-        <img src="pic/logo.png" alt="Logo">
-        <p>My name is Piolo Dionisio, 21 years old, and I live in Caalibangbangan Cabanatuan City. The one word I pick in my fascination test is <span class="organized">Organized</span>.</p>
+        <h1>ITE - 300</h1>
+        <button class="custom-button" onclick="window.open('https://drive.google.com/drive/folders/1cLEouX5UR-yCrdCzXmfTpYJaWdPk2CPk', '_blank')">
+            <img src="pic/dolibee.png" alt="Image Button">
+        </button>
+        
+        <h1>ITE - 308</h1>
+        <button class="custom-button" onclick="window.open('https://drive.google.com/drive/folders/1PLTP3b-I7LtxvpS2ITRGTJ1BWQVCDY_J', '_blank')">
+            <img src="pic/sw.png" alt="Image Button">
+        </button>
+    
+        <h1>ITE - 300</h1>
+        <button class="custom-button" onclick="window.open('https://drive.google.com/drive/folders/1Ijf5-eoeQDe-QL8XFeM-WQAfrHvn4GoX', '_blank')">
+            <img src="pic/ams.png" alt="Image Button">
+        </button>
+    
+        <h1>ITE - 393</h1>
+        <button class="custom-button" onclick="window.open('https://drive.google.com/drive/folders/19dOeNDEXKDKi1m4vtIbpwisrysGaSI1z?usp=sharing', '_blank')">
+            <img src="pic/sw1.png" alt="Image Button">
+        </button>
+    
+        <h1>ITE - 400</h1>
+        <button class="custom-button" onclick="window.open('https://drive.google.com/drive/folders/1b2t4Kwh60n3fi50vAm9v2QcyoIDj2Mfz?usp=sharing', '_blank')">
+            <img src="pic/sw2.png" alt="Image Button">
+        </button>
+    
+        <h1>ITE - 314, 307, 353</h1>
+        <button class="custom-button" onclick="window.open('https://github.com/pyolo-dotcom/workforce', '_blank')">
+            <img src="pic/intergrated.png" alt="Image Button">
+        </button>
+
+        <h1>ITE - 387</h1>
+        <button class="custom-button" onclick="window.open('https://drive.google.com/drive/folders/1rIbFegOd3VWG61Fo8bTdG6OmJxY7Hx_d?usp=sharing', '_blank')">
+            <img src="pic/advanceprog.png" alt="Image Button">
+        </button>
+
+        <h1>SALESFORCE</h1>
+        <button class="custom-button" onclick="window.open('https://www.salesforce.com/trailblazer/iedyzaqujaoobmxu3t', '_blank')">
+            <img src="pic/salesforce.png" alt="Image Button">
+        </button>
     </section>
+    
 
     <footer>
         <p>&copy; 2023 Piolo O. Dionisio. All rights reserved.</p>

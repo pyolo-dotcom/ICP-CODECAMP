@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('pic/t1.jpg') center/cover no-repeat fixed;
+        font-family: 'Arial', sans-serif;
+    }
+
+    header {
+        text-align: left;
+        color: black;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        width: 150px;
+        height: auto;
+        margin-top: -40px;
+        margin-bottom: -40px;
+    }
+
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        margin: 0;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        margin: 0;
+        background-color: #7b66ff;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 20px 15px;
+        text-decoration: none;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+        gap: 10px; /* Space between grid items */
+        padding: 20px;
+        max-width: 1200px; /* Limit the width of the gallery */
+        margin: 0 auto; /* Center the gallery */
+    }
+
+
+    .gallery img {
+        width: 100%; /* Make the image take full width of the grid item */
+        height: 200px; /* Set a fixed height for all images */
+        border-radius: 8px; /* Slightly rounded corners */
+        object-fit: cover; /* Ensure the aspect ratio is maintained */
+        transition: transform 0.3s; /* Animation effect */
+    }
+
+
+    .gallery img:hover {
+        transform: scale(1.05); /* Zoom effect on hover */
+    }
+
+    footer {
+        background-color: #7b66ff;
+        color: black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 50px;
+    }
+
+    .social-icons a {
+        color: black;
+        font-size: 24px;
+        transition: transform 0.3s;
+    }
+
+    .social-icons a:hover {
+        transform: scale(1.2);
+    }
+</style>
+<body>
+    <header>
+        <img src="pic/logo.png" alt="Logo">
+        <h1>My Gallery</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="skillset.html">SKILL SET</a></li>
+            <li><a href="samplework.html">SAMPLE WORK</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <img src="pic/school.jpg" alt="Image 1">
+        <img src="pic/school1.jpg" alt="Image 2">
+        <img src="pic/school2.jpg" alt="Image 3">
+        <img src="pic/school3.jpg" alt="Image 4">
+        <img src="pic/school4.jpg" alt="Image 5">
+        <img src="pic/school5.jpg" alt="Image 6">
+        <img src="pic/school6.jpg" alt="Image 7">
+        <img src="pic/bola.jpg" alt="Image 8">
+        <img src="pic/bola1.jpg" alt="Image 9">
+        <img src="pic/bola2.jpg" alt="Image 10">
+        <img src="pic/school7.jpg" alt="Image 11">
+        <img src="pic/school8.jpg" alt="Image 12">
+    </div>
+    <!-- End of Gallery Section -->
+
+    <footer>
+        <p>&copy; 2023 Piolo O. Dionisio. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/dionisio.piolo" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/piolodionisio/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:dionisiopiolo@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://pioloortizdionisio.jobs180.com/" class="footer-link" target="_blank"><i class="fas fa-briefcase"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

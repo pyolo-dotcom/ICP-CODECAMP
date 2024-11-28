@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Portfolio</title>
     <style>
         body {
             margin: 0;
@@ -19,18 +19,24 @@
         }
 
         header {
-            text-align: right;
+            text-align: left;
             color: black;
-            padding: 34px;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
+        header img {
+            width: 150px;
+            height: auto;
+            margin-top: -40px;
+            margin-bottom: -40px;
+        }
+
         h1 {
             font-family: 'Roboto Slab', serif;
             margin: 0;
-            margin-left: auto;
         }
 
         nav ul {
@@ -52,7 +58,7 @@
             text-align: center;
             padding: 20px 15px;
             text-decoration: none;
-            font-family: 'Exo 2', sans-serif;
+            font-family: 'Exo 2', sans-serif; /* Apply Exo 2 font */
         }
 
         nav a:hover {
@@ -60,28 +66,42 @@
             color: black;
         }
 
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: black;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+        .skill-container {
+            margin: 20px auto; /* Center the container */
+            text-align: center; /* Center the child elements */
         }
 
-        .content img {
-            max-width: 100%;
+        .skill-container img {
+            max-width: 50px; /* Set the maximum width */
             height: auto;
-            border-radius: 100px;
-            margin-right: 20px;
+            border-radius: 10px;
+            margin: 0 18px; /* Adjust the spacing */
         }
 
-        .content p {
-            flex: 1;
-            font-size: 18px;
-            line-height: 1.6;
-            font-family: 'Poppins', sans-serif;
+        .certificate,
+        .certificate-t {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .certificate p,
+        .certificate-t p {
+            font-size: 35px;
+            font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+        }
+
+        .certificate img,
+        .certificate-t img {
+            max-width: 280px; /* Set the maximum width for certificate images */
+            height: auto;
+            border-radius: 10px;
+            margin: 10px; /* Add spacing around each certificate image */
+            transition: transform 0.3s ease-in-out; /* Add transition for a smooth effect */
+        }
+
+        .certificate img:hover,
+        .certificate-t img:hover {
+            transform: scale(1.2); /* Zoom in effect on hover */
         }
 
         footer {
@@ -118,7 +138,8 @@
 <body>
 
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <img src="pic/logo.png" alt="Logo">
+        <h1>My Skill Set</h1>
     </header>
 
     <nav>
@@ -131,10 +152,40 @@
         </ul>
     </nav>
 
-    <section class="content">
-        <img src="pic/logo.png" alt="Logo">
-        <p>My name is Piolo Dionisio, 21 years old, and I live in Caalibangbangan Cabanatuan City. The one word I pick in my fascination test is <span class="organized">Organized</span>.</p>
-    </section>
+    <div class="skill-container">
+        <div>
+            <img src="pic/html-removebg-preview.png" alt="Skill 1">
+            <img src="pic/php-removebg-preview.png" alt="Skill 2">
+            <img src="pic/java-removebg-preview.png" alt="Skill 3">
+            <img src="pic/python-removebg-preview.png" alt="Skill 4">
+            <img src="pic/laravel.png" alt="Skill 5">
+            <img src="pic/node.png" alt="Skill 6">
+        </div>
+    </div>
+
+    <div class="certificate">
+        <div>
+            <p>This is my certificate for Networking I</p>
+            <img src="pic/c1.png" alt="Certificate 1">
+            <img src="pic/c2.png" alt="Certificate 2">
+            <img src="pic/c3.png" alt="Certificate 3">
+            <img src="pic/c4.png" alt="Certificate 4">
+            <img src="pic/c5.png" alt="Certificate 5">
+        </div>
+    </div>
+
+    <div class="certificate-t">
+        <div>
+            <p>This is my certificate for attending the seminar TECHTALK Ignite{it}</p>
+            <img src="pic/t1-removebg-preview.png" alt="Certificate 1">
+            <img src="pic/t2-removebg-preview.png" alt="Certificate 2">
+            <img src="pic/t3-removebg-preview.png" alt="Certificate 3">
+            <img src="pic/t4-removebg-preview.png" alt="Certificate 4">
+            <img src="pic/t5-removebg-preview.png" alt="Certificate 5">
+            <p>This is my certificate for passing the Oracle</p>
+            <img src="pic/oracle.jpg" alt="Certificate 6">
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2023 Piolo O. Dionisio. All rights reserved.</p>
